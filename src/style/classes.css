@@ -72,6 +72,44 @@
     align-items: center;
 }
 
+.card .question{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+}
+
+.button-question {
+    width: 100%;
+    color: #333;
+    border-radius: 20px;
+    padding: 10px; 
+    margin: 20px;
+    width: 80%;
+    text-align: center;
+    text-justify: center;
+}
+
+#yes {
+    background-color: rgb(129, 243, 129);
+}
+
+#yes:hover , #no:hover{
+    transform: scale(0.95);
+}
+
+#yes:active {
+    background-color: rgb(70, 247, 70);;
+}
+
+#no {
+    background-color: rgb(252, 130, 130);
+}
+
+#no:active {
+    background-color: rgb(248, 90, 90);
+}
+
 .alertcity {
     display:none;
     padding: 6px;

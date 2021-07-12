@@ -14,6 +14,9 @@ const temp2 = document.getElementById('temp2');
 const alert1 = document.getElementById('alert1');
 const alert2 = document.getElementById('alert2');
 
+const yesButton = document.getElementById('yes');
+const question = document.getElementById('question-card');
+
 /* Formats the search / API URL */
 function url(city, k){
     return `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${k}`
@@ -213,4 +216,19 @@ function getLocation(){
 }
 if (!search1.value) {
     //getLocationPopup()
+}
+
+function yesClick(){
+    getLocation(); 
+    noClick(); 
+    showCard(); 
+}
+
+function noClick(){
+    question.style.display = 'none'; 
+    showCard(); 
+}
+
+function showCard(){
+    document.getElementById('mainCard').style.display = 'block';
 }
