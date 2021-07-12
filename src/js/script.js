@@ -204,7 +204,7 @@ function getLocation(){
     fetch('https://extreme-ip-lookup.com/json/')
     .then( res => res.json())
     .then(response => {
-        console.log(response.city)
+        console.log('city '+response.city)
         search1.value = response.city;
     })
     .catch((data, status) => {
