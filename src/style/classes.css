@@ -1,0 +1,155 @@
+
+
+/* Navbar */
+
+.navbar {
+    height: 10%;
+    background-color: var(--secondary-color);
+}
+
+/* Card with the searches */
+
+.submitButton {
+    background-color: var(--primary-color);
+    color: #333;
+    border-radius: 20px;
+    padding: 10px; 
+    margin: 20px;
+    width: 80%;
+    text-align: center;
+    text-justify: center;
+}
+
+.clearButton {
+    background-color: rgb(240, 167, 167);
+    color: #333;
+    border-radius: 20px;
+    padding: 10px; 
+    margin: 20px;
+    width: 80%;
+    text-align: center;
+    text-justify: center;
+}
+
+.submitButton:hover{
+    transform: scale(0.98);
+}
+
+.submitButton:active {
+    background-color: var(--secondary-color);
+}
+
+.clearButton:hover{
+    transform: scale(0.98);
+}
+
+.clearButton:active {
+    background-color: rgb(216, 137, 137);
+}
+
+.card {
+    background-color: var(--tertiary-color);
+    color: #333; 
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    padding: 20px; 
+    margin: 10px;
+
+    align-items: center;
+    justify-items: center;
+}
+
+.card form {
+    display: flex; 
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card .each {
+    display: flex; 
+    flex-direction: row;
+    gap: 10px; 
+    align-items: center;
+}
+
+.alertcity {
+    display:none;
+    padding: 6px;
+    height: 40px;
+}
+
+/* Content */
+
+.weather {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.weather h2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.weather small {
+    font-size: 1rem; 
+}
+
+.content {
+    padding-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card.response {
+    font-family:'Lato';
+}
+
+/* Footer */
+
+.footer {
+    position: fixed;
+    height: 8%;
+    background-color: var(--primary-color);
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .link {
+    padding-left: 10%;
+}
+
+.footer a {
+    font-size: 25px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.footer .link a:hover {
+    color: black;
+    border-bottom: 3px solid var(--secondary-color);
+    padding-bottom: 1px;
+}
+
+.footer .socials {
+    padding-right: 10%;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    color: black;
+    align-items: center;
+}
+
+.footer .socials svg:hover {
+    border-bottom: 3px solid var(--secondary-color);
+    padding-bottom: 3px;
+}
