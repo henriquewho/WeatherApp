@@ -211,5 +211,5 @@ function getLocation(){
     })
 }
 if (!search1.value) {
-    //getLocationPopup()
+    getLocationPopup()
 }
