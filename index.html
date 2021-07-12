@@ -19,6 +19,8 @@
             <a href="index.html"><h1>TravelWeather App</h1></a>
         </div>
 
+        
+
         <!-- intro (maybe a tip for what the site does?) -->
         <div class="intro">
             
@@ -26,7 +28,18 @@
 
         <!-- content -->
         <section class="content">
-            <div class="card">
+
+            <!-- get location? -->
+
+            <div class="card" id="question-card">
+                <p>This website wants to use your location (city),  based on your IP Address. Do you want to allow it?</p>
+                <div class="question">
+                    <div class="button-question" id='yes' onclick="yesClick()">yes</div>
+                    <div class="button-question" id='no' onclick="noClick()">no</div>
+                </div>
+            </div>
+
+            <div class="card" id ="mainCard" style="display: none">
                 <form id='form'>
 
                     <div class="each">
