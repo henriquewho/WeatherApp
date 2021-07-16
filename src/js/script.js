@@ -219,7 +219,7 @@ if (!search1.value) {
 }
 
 function yesClick(){
-    getLocation(); 
+    getLocationJQ(); 
     noClick(); 
     showCard(); 
 }
@@ -231,4 +231,19 @@ function noClick(){
 
 function showCard(){
     document.getElementById('mainCard').style.display = 'block';
+}
+
+/* new location getter */
+
+function getLocationJQ(){
+    $.ajax({
+        url: "https://geolocation-db.com/jsonp",
+        jsonpCallback: "callback",
+        dataType: "jsonp",
+        success: function(location) {
+          $('#city').html(location.city);
+          //alert(location.city); 
+          search1.value = location.city; 
+        }
+    });
 }
