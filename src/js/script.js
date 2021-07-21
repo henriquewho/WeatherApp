@@ -81,7 +81,7 @@ function addDifferenceToPage(data1, data2, state){
         } else {
             str = `
             <div class="card response" style="background-color: white">
-            <h3>The temperature is the same in ${cities[0]} and ${cities[1]} right now, ${temps[0]} dregrees!</h3>
+            <h3>The temperature is the same in ${cities[0]} and ${cities[1]} right now, ${temps[0]} degrees!</h3>
             </div> 
         `
         }
