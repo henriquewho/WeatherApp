@@ -61,6 +61,11 @@ function addDifferenceToPage(data1, data2, state){
             <div class="card response">
             <h3>The second city was not found. Please try again.</h3>
             </div> `
+        } else if (state == 'missingCities') {
+            str = `
+            <div class="card response">
+            <h3>Please enter both cities in the fields above.</h3>
+            </div> `
         }
     } else {
         const temps = [Math.floor(data1.main.temp) , Math.floor(data2.main.temp)];
@@ -146,11 +151,14 @@ async function submitClick(){
     clearTemperatures(); 
     let data1=data2=null;
 
-    // First tests if both cities were entered
+    /* First tests if both cities were entered
     if (!search1.value || search1.value=="") {
         alert('You need to enter "Your City"!');
     } else if (!search2.value || search2.value=="") {
         alert('You need to enter "Other City"!');
+    */
+    if (!search1.value || search1.value=="" || !search2.value || search2.value=="") {
+        addDifferenceToPage(null, null, 'missingCities');
     } else {
         // Both cities were entered, call function
         data1 = await getWeatherBycity(search1.value); 
