@@ -1,7 +1,7 @@
 # WeatherComparisonApp 
-This is a personal project with no professional or financial intentions. 
+This is a personal project created with the goal of practicing web development skills, such as HTML, CSS and JavaScript.   
 
-It was created with the goal of practicing web development skills, such as HTML, CSS and JavaScript. 
+Link: [https://weathercomparisonapp.netlify.app/](https://weathercomparisonapp.netlify.app/)
 
 # API's 
 This app uses a external API to: 
